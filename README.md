@@ -109,11 +109,14 @@ python preprocessing/neuradock_preprocessing.py
 
 将预处理后的 EEG 信号输入深度学习模型，复现视觉图像：
 
-1.  **适配转换**：通过 `adapter.py` 将 Neuradock 的通道数据映射到模型预期的维度。
-2.  **模型推理**：调用 [论文名] 的预训练模型进行重建。
+1.  **适配转换**：
+#####用Generation_adapters/eegdatasets_leaveone_neuradock.py替换掉Generation中的eegdatasets_leaveone.py文件，
+#####用Generation_adapters/data_config.json替换掉Generation中的data_config.json文件
+#####用Generation_adapters/ATMS_reconstruction_neuradock.py替换掉Generation中的ATMS_reconstruction.py文件
+4.  **模型推理**：运行训练脚本
 
 ```bash
-python models/adapter.py --input data/processed/S001_epochs.npy --model_path checkpoints/vision_recon_v1.pth
+python ATMS_reconstruction_neuradock.py --insubject True --subjects sub-001-preprocessed --logger True --gpu cuda:2  --output_dir ./outputs/contrast --train_file preprocessed_eeg_training__4__1__100.npy --test_file preprocessed_eeg_training__4__1__100_average.npy --test_name 100hz 
 ```
 
 ---
