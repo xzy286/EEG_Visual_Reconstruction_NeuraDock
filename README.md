@@ -142,8 +142,9 @@ python ATMS_reconstruction_neuradock.py --insubject True --subjects sub-001-prep
 
 ### 核心模型
 本项目视觉重建算法部分代码引用/修改自以下研究：
-> **[论文作者]**. "[论文题目]". *[期刊/会议名称]*, [年份].
-> [GitHub 链接]
+Li, Dongyang, et al. "Visual decoding and reconstruction via eeg embeddings with guided diffusion." arXiv preprint arXiv:2403.07721 (2024).
+
+[> [GitHub 链接]](https://github.com/dongyangli-del/EEG_Image_decode/tree/main)
 
 ### 硬件支持
 感谢 **Neuradock** 团队提供的设备支持与 SDK 接口文档。
