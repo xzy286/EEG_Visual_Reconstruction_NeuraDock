@@ -33,21 +33,22 @@
 本项目需要两个独立的 Python 环境以适配不同的功能模块：
 #### 采集环境 (Acquisition Environment)
 用于运行 Neuradock SDK 和 RSVP 刺激程序。
-- **Python 版本**: 建议 3.7  
+- **Python 版本**: 建议 3.10  
 - **安装指令**:
   ```bash
-  conda create -n neuradock_env python=3.7
-  conda activate neuradock_env
+  conda create -n neuradock_rsvp python=3.10
+  conda activate neuradock_rsvp
   pip install -r requirements_rsvp.txt
   ```
 #### 处理与训练环境 (ML Environment)
 用于信号预处理、模型训练及视觉重建。
-- **Python 版本**: 建议 3.10 
+- **Python 版本**: 建议 3.12 
 - **安装指令**:
   ```bash
-  conda create -n ml_env python=3.10
-  conda activate ml_env
-  pip install -r requirements_model.txt
+  conda create -n BCI python=3.12 -y
+  conda activate BCI
+  pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/cu124
+  pip install -r requirements_reconstruction.txt
   ```
 ---
 
