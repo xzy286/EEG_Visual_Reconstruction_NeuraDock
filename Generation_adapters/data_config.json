@@ -1,0 +1,8 @@
+{
+    "data_path": "D:\\EEG_Image_decode-main\\EEG_Image_decode-main\\neuradock_data",
+    "img_directory_training": "D:\\EEG_Image_decode-main\\EEG_Image_decode-main\\training_images\\training_images",
+    
+    "img_directory_test": "D:\\EEG_Image_decode-main\\EEG_Image_decode-main\\test_images\\test_images",
+    "features_path":"/home/ldy/Workspace/THINGS/CLIP"
+}
+
