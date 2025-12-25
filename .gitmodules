@@ -1,0 +1,3 @@
+[submodule "Generation"]
+	path = Generation
+	url = https://github.com/dongyangli-del/EEG_Image_decode.git
