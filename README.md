@@ -111,11 +111,11 @@ python preprocessing/neuradock_preprocessing.py
 
 1.  **适配转换**：
    
-#####用Generation_adapters/eegdatasets_leaveone_neuradock.py替换掉Generation中的eegdatasets_leaveone.py文件，
+##### 用Generation_adapters/eegdatasets_leaveone_neuradock.py替换掉Generation中的eegdatasets_leaveone.py文件，
 
-#####用Generation_adapters/data_config.json替换掉Generation中的data_config.json文件
+##### 用Generation_adapters/data_config.json替换掉Generation中的data_config.json文件
 
-#####用Generation_adapters/ATMS_reconstruction_neuradock.py替换掉Generation中的ATMS_reconstruction.py文件
+##### 用Generation_adapters/ATMS_reconstruction_neuradock.py替换掉Generation中的ATMS_reconstruction.py文件
 4.  **模型推理**：运行训练脚本
 
 ```bash
