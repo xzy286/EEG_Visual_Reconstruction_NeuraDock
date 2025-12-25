@@ -58,10 +58,12 @@
 │   └── neuradock_rsvp.py                 # neuradock设备的视觉刺激程序 (Psychopy)，包含信号读取与打标
 ├── preprocessing/                        # 信号预处理
 │   └── neuradock_preprocessing.py        # neuradock设备预处理，处理后的数据格式与论文对齐
-├── models/                               # 重建模型
-│   ├── external_model/                   # [子模块] 引用论文的原始代码
-│   └── adapter.py                        # 适配层：将 Neuradock 数据转换为模型输入格式
-├── data/                                 # 数据存放 (建议仅放示例)
+├── Generation/                           # 论文的重建模型
+├── Generation_adapters/          # 存放你那两个修改后的文件
+│   ├── dataset_neuradock.py # 修改后的文件1
+│   ├── data_config.json # 修改后的文件2
+│   └── ATMS_neuradock.py  # 修改后的文件3
+├── data/                                 # 数据存放
 ├── notebooks/                            # 过程分析与可视化 Demo
 └── config.yaml                           # 通道映射与超参数配置
 ```
