@@ -60,9 +60,9 @@
 │   └── neuradock_preprocessing.py        # neuradock设备预处理，处理后的数据格式与论文对齐
 ├── Generation/                           # 论文的重建模型
 ├── Generation_adapters/          # 存放你那两个修改后的文件
-│   ├── dataset_neuradock.py # 修改后的文件1
-│   ├── data_config.json # 修改后的文件2
-│   └── ATMS_neuradock.py  # 修改后的文件3
+│   ├── eegdatasets_leaveone_neuradock.py # 用这个文件替换掉Generation中的eegdatasets_leaveone.py文件
+│   ├── data_config.json                  # 用这个文件替换掉Generation中的data_config.json文件
+│   └── ATMS_reconstruction_neuradock.py  # 用这个文件替换掉Generation中的ATMS_reconstruction.py文件
 ├── data/                                 # 数据存放
 ├── notebooks/                            # 过程分析与可视化 Demo
 └── config.yaml                           # 通道映射与超参数配置
