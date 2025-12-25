@@ -362,7 +362,7 @@ def process_single_session(data_dir, session_files):
         
         # 2. 预处理
         raw.notch_filter(50.0, n_jobs=1, verbose=False)
-        raw.filter(1, 20.0, n_jobs=1, verbose=False)
+        raw.filter(1, 100.0, n_jobs=1, verbose=False)
         
         if ORIGIN_SFREQ != TARGET_SFREQ:
             raw.resample(TARGET_SFREQ, verbose=False)
@@ -535,17 +535,17 @@ else:
     print(f"\nFinal Train Shape: {train_data.shape}") # 预期 (N*10, 4, 7or63, 250)
     print(f"Final Test Shape: {test_data.shape}")   # 预期 (200, 80, 7or63, 250)
     print(train_data)
-    np.save(r"D:\EEG_Image_decode-main\EEG_Image_decode-main\neuradock_data\sub-001-preprocessed\preprocessed_eeg_training__4__1__20.npy", train_data)
-    np.save(r"D:\EEG_Image_decode-main\EEG_Image_decode-main\neuradock_data\sub-001-preprocessed\preprocessed_eeg_test__4__1__20.npy", test_data)
+    np.save(r"D:\EEG_Image_decode-main\EEG_Image_decode-main\neuradock_data\sub-001-preprocessed\preprocessed_eeg_training__4__1__100.npy", train_data)
+    np.save(r"D:\EEG_Image_decode-main\EEG_Image_decode-main\neuradock_data\sub-001-preprocessed\preprocessed_eeg_test__4__1__100.npy", test_data)
     
 
 
 
-    dd = np.load(r"D:\EEG_Image_decode-main\EEG_Image_decode-main\neuradock_data\sub-001-preprocessed\preprocessed_eeg_training__4__1__20.npy")
+    dd = np.load(r"D:\EEG_Image_decode-main\EEG_Image_decode-main\neuradock_data\sub-001-preprocessed\preprocessed_eeg_training__4__1__100.npy")
     dd[:,0,:,:] = (dd[:,0,:,:]+dd[:,1,:,:]+dd[:,2,:,:]+dd[:,3,:,:]+dd[:,4,:,:]+dd[:,5,:,:])/6
     dd[:,1,:,:] = dd[:,0,:,:]
     dd = dd[:,:2,:,:]
-    np.save(r"D:\EEG_Image_decode-main\EEG_Image_decode-main\neuradock_data\sub-001-preprocessed\preprocessed_eeg_training__4__1__20_average.npy",dd)
+    np.save(r"D:\EEG_Image_decode-main\EEG_Image_decode-main\neuradock_data\sub-001-preprocessed\preprocessed_eeg_training__4__1__100_average.npy",dd)
     
     print("保存完成！")
     
