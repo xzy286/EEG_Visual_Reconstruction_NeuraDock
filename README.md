@@ -30,16 +30,6 @@
 
 ### 2. 软件环境
 
-本项目需要两个独立的 Python 环境以适配不同的功能模块：
-#### 采集环境 (Acquisition Environment)
-用于运行 Neuradock SDK 和 RSVP 刺激程序。
-- **Python 版本**: 建议 3.10  
-- **安装指令**:
-  ```bash
-  conda create -n neuradock_rsvp python=3.10
-  conda activate neuradock_rsvp
-  pip install -r requirements_rsvp.txt
-  ```
 #### 处理与训练环境 (ML Environment)
 用于信号预处理、模型训练及视觉重建。
 - **Python 版本**: 建议 3.12 
@@ -56,7 +46,8 @@
 
 ```text
 ├── acquisition/                          # 数据采集模块
-│   └── neuradock_rsvp.py                 # neuradock设备的视觉刺激程序 (Psychopy)，包含信号读取与打标
+│   ├── config_rsvp.json 
+│   └── neuradock_rsvp.exe                # neuradock设备的视觉刺激程序 (Psychopy)，包含信号读取与打标
 ├── preprocessing/                        # 信号预处理
 │   └── neuradock_preprocessing.py        # neuradock设备预处理，处理后的数据格式与论文对齐
 ├── Generation/                           # 论文的重建模型
@@ -89,7 +80,7 @@
     运行视觉刺激脚本，程序将自动同步采集脑电信号并记录 `Marker`（事件标记）。
     ```bash
     # 启动 RSVP (快速序列视觉呈现) 实验
-    python acquisition/neuradock_rsvp.py
+    acquisition/neuradock_rsvp.exe
     ```
 
 #### 第二步：预处理 (Preprocessing)
@@ -102,6 +93,7 @@
 
 ```bash
 # 将原始数据转换为与论文中一致的格式
+# conda activate BCI
 python preprocessing/neuradock_preprocessing.py
 ```
 
@@ -114,6 +106,7 @@ python preprocessing/neuradock_preprocessing.py
 4.  **模型推理**：运行训练脚本
 
 ```bash
+# conda activate BCI
 python ATMS_reconstruction_neuradock.py --insubject True --subjects sub-001-preprocessed --logger True --gpu cuda:2  --output_dir ./outputs/contrast --train_file preprocessed_eeg_training__4__1__100.npy --test_file preprocessed_eeg_training__4__1__100_average.npy --test_name 100hz 
 ```
 
