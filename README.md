@@ -60,13 +60,12 @@
 ├── preprocessing/                        # 信号预处理
 │   └── neuradock_preprocessing.py        # neuradock设备预处理，处理后的数据格式与论文对齐
 ├── Generation/                           # 论文的重建模型
-├── Generation_adapters/          # 存放你那两个修改后的文件
+├── Generation_adapters/          
 │   ├── eegdatasets_leaveone_neuradock.py # 用这个文件替换掉Generation中的eegdatasets_leaveone.py文件
 │   ├── data_config.json                  # 用这个文件替换掉Generation中的data_config.json文件
 │   └── ATMS_reconstruction_neuradock.py  # 用这个文件替换掉Generation中的ATMS_reconstruction.py文件
 ├── data/                                 # 数据存放
-├── notebooks/                            # 过程分析与可视化 Demo
-└── config.yaml                           # 通道映射与超参数配置
+└── notebooks/                            # 过程分析与可视化 Demo
 ```
 
 ---
@@ -84,7 +83,7 @@
     *   通过蓝牙或专用接收器将设备连接至电脑。
 3.  **启动数据端口**：
     *   打开 Neuradock SDK 管理软件（如 Neuradock Hub）。
-    *   确认设备在线后，点击 **"Open Port"** 或 **"Start Streaming"**，开启数据转发服务（通常使用 LSL 或 TCP 协议）。
+    *   确认设备在线后，点击 **"打开数据服务"**，开启数据转发服务（TCP协议）。
     *   步骤2和3可以参考 [https://neuradock.com/product-instruction]
 4.  **运行实验程序**：
     运行视觉刺激脚本，程序将自动同步采集脑电信号并记录 `Marker`（事件标记）。
