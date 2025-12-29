@@ -1,0 +1,9 @@
+{
+    "test_images_dir": "D:\\EEG_Image_decode-main\\EEG_Image_decode-main\\test_images\\test_images",
+    "train_images_dir": "D:\\EEG_Image_decode-main\\EEG_Image_decode-main\\training_images\\training_images",
+    "target_image_path": "D:\\EEG_Image_decode-main\\EEG_Image_decode-main\\buzz.jpg",
+    "eeg_ip": "192.168.56.1",
+    "eeg_port": 9600,
+    "output_data_dir": "./neuradock_data",
+    "refresh_rate": 60
+}
