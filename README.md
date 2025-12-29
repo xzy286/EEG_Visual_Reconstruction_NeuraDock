@@ -16,7 +16,7 @@
 
 - **数据采集**：适配 Neuradock SDK 的实时信号记录与打标（Event Marking）。
 - **信号处理**：基于 MNE-Python 的标准化脑电预处理流水线（滤波、去噪、分段）。
-- **模型集成**：将预处理后的 EEG 特征对接到 [论文名] 的视觉重建模型。
+- **模型集成**：将预处理后的 EEG 特征对接到论文的视觉重建模型。
 - **端到端流程**：从视觉刺激呈现到重建图像生成的完整闭环。
 
 ---
@@ -134,7 +134,7 @@ python ATMS_reconstruction_neuradock.py --insubject True --subjects sub-001-prep
 
 | 原始视觉刺激 (Ground Truth) | Neuradock 重建图像 (Reconstructed) |
 | :---: | :---: |
-| ![003df9db5df1de06fba33a403a65e8b6](https://github.com/user-attachments/assets/77468949-a430-4826-9b39-ff15e23941fa) | <img width="173" height="865" alt="dd6eaaf05e12af24ba63cc2d46b26279" src="https://github.com/user-attachments/assets/f25ee48b-5420-4840-8086-826bee4753f4" />|
+| ![003df9db5df1de06fba33a403a65e8b6](https://github.com/user-attachments/assets/77468949-a430-4826-9b39-ff15e23941fa) | ![dd6eaaf05e12af24ba63cc2d46b26279](https://github.com/user-attachments/assets/f046896c-eb90-4fc2-adf5-299d0588cbcf) |
 ---
 
 ## 📜 引用与致谢
