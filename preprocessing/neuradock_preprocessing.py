@@ -220,7 +220,7 @@ for i in range(4):
     for type in ["TRAIN","TEST"]:
         for j in range(19):
             try:
-                filename = f'D:\\EEG_Image_decode-main\\EEG_Image_decode-main\\neuradock_data\\sub-001-1000px\\sess{i+1}_run{j+1:02d}_{type}.npy'
+                filename = f'D:\\EEG_Image_decode-main\\EEG_Image_decode-main\\neuradock_data\\sub-001\\sess{i+1}_run{j+1:02d}_{type}.npy' #raw data path
                 print(filename)
                 raw_data = np.load(filename)
                 marker = raw_data[:, 7] 
@@ -550,3 +550,4 @@ else:
     print("保存完成！")
     
     
+
