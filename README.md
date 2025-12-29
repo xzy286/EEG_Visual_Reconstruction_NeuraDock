@@ -46,7 +46,7 @@
 
 ```text
 ├── acquisition/                          # 数据采集模块
-│   ├── config_rsvp.json 
+│   ├── config_rsvp.json                  # 与neuradock_rsvp.exe放在同一个目录下
 │   └── neuradock_rsvp.exe                # neuradock设备的视觉刺激程序 (Psychopy)，包含信号读取与打标
 ├── preprocessing/                        # 信号预处理
 │   └── neuradock_preprocessing.py        # neuradock设备预处理，处理后的数据格式与论文对齐
