@@ -134,9 +134,7 @@ python ATMS_reconstruction_neuradock.py --insubject True --subjects sub-001-prep
 
 | 原始视觉刺激 (Ground Truth) | Neuradock 重建图像 (Reconstructed) |
 | :---: | :---: |
-| <img width="173" height="865" alt="003df9db5df1de06fba33a403a65e8b6" src="https://github.com/user-attachments/assets/d232f3d5-b94a-4b7d-9e59-009b9394c7f5" />
-| <img width="173" height="865" alt="dd6eaaf05e12af24ba63cc2d46b26279" src="https://github.com/user-attachments/assets/f25ee48b-5420-4840-8086-826bee4753f4" />
- |
+| <img width="173" height="865" alt="003df9db5df1de06fba33a403a65e8b6" src="https://github.com/user-attachments/assets/d232f3d5-b94a-4b7d-9e59-009b9394c7f5" />| <img width="173" height="865" alt="dd6eaaf05e12af24ba63cc2d46b26279" src="https://github.com/user-attachments/assets/f25ee48b-5420-4840-8086-826bee4753f4" />|
 ---
 
 ## 📜 引用与致谢
