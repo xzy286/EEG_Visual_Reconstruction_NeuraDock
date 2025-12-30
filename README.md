@@ -75,7 +75,7 @@
 3.  **启动数据端口**：
     *   打开 Neuradock SDK 。
     *   确认设备在线后，点击 **"打开数据服务"**，开启数据转发服务（TCP协议）。
-    *   步骤2和3可以参考 [https://neuradock.com/product-instruction]
+设备连接和启动数据端口可以参考 [https://neuradock.com/product-instruction]
 4.  **运行实验程序**：
     运行视觉刺激脚本，程序将自动同步采集脑电信号并记录 `Marker`（事件标记）。
     neuradock_rsvp.exe 下载链接: https://pan.baidu.com/s/1jgqbQT_lgJ5KpZt6I5IBdg 提取码: cvw4
