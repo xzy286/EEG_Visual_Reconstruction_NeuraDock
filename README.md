@@ -3,7 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![EEG: Neuradock](https://img.shields.io/badge/Hardware-Neuradock-green.svg)](https://www.neuradock.com/)
-![68a075374a40b0cfece0257a7bd6d88c](https://github.com/user-attachments/assets/928969b6-c130-4a4b-a973-59c94848842f)
+<img width="303" height="190" alt="微信图片_20251230211413_1534_5" src="https://github.com/user-attachments/assets/2aeffd54-9106-4dee-aef1-0844a9bec760" />
+
 
 
 本仓库包含基于 **Neuradock** 脑电设备的视觉图像重建复现工作。项目涵盖了从原始信号采集、预处理到接入深度学习模型进行图像还原的完整流程。
