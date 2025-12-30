@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![EEG: Neuradock](https://img.shields.io/badge/Hardware-Neuradock-green.svg)](https://www.neuradock.com/)
-<img alt="微信图片_20251230211413_1534_5" src="https://github.com/user-attachments/assets/2aeffd54-9106-4dee-aef1-0844a9bec760" />
+<img width="606" height="380" alt="微信图片_20251230211413_1534_5" src="https://github.com/user-attachments/assets/2aeffd54-9106-4dee-aef1-0844a9bec760" />
 
 
 
