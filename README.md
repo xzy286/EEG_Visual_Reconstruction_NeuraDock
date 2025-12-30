@@ -73,7 +73,7 @@
     *   佩戴 Neuradock 脑电设备，并确保电极与头皮接触良好（建议通过 SDK 自带工具检查阻抗）。
     *   通过蓝牙或专用接收器将设备连接至电脑。
 3.  **启动数据端口**：
-    *   打开 Neuradock SDK 管理软件（如 Neuradock Hub）。
+    *   打开 Neuradock SDK 。
     *   确认设备在线后，点击 **"打开数据服务"**，开启数据转发服务（TCP协议）。
     *   步骤2和3可以参考 [https://neuradock.com/product-instruction]
 4.  **运行实验程序**：
