@@ -3,9 +3,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![EEG: Neuradock](https://img.shields.io/badge/Hardware-Neuradock-green.svg)](https://www.neuradock.com/)
+<img width="2419" height="1516" alt="9e954b6acb2cbda3db0c0998750a0557" src="https://github.com/user-attachments/assets/0c90f7a2-b447-41d2-9557-e8430c6a177c" />
 
 
-<img width="606" height="380" alt="微信图片_20251230211413_1534_5" src="https://github.com/user-attachments/assets/2aeffd54-9106-4dee-aef1-0844a9bec760" />
 
 
 
@@ -78,7 +78,8 @@
 3.  **启动数据端口**：
     *   打开 Neuradock SDK 。
     *   确认设备在线后，点击 **"打开数据服务"**，开启数据转发服务（TCP协议）。
-    
+    <img width="3440" height="1369" alt="60f8725bb3625d3a1824ff32fc06a994" src="https://github.com/user-attachments/assets/1b044fca-8834-40e4-b8de-cda2d323a3c2" />
+
 设备连接和启动数据端口可以参考 [https://neuradock.com/product-instruction]
 
 4.  **运行实验程序**：
