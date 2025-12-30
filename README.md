@@ -73,7 +73,7 @@
 
 1.  **安装 SDK**：访问 [Neuradock 官网https://neuradock.com/downloads] 下载并安装最新的 **Neuradock SDK**。
 2.  **设备连接**：
-    *   佩戴 Neuradock 脑电设备，通过蓝牙或专用接收器将设备连接至电脑。
+    *   佩戴 Neuradock 脑电设备，通过USB将设备连接至电脑。
     *   确保电极与头皮接触良好（通过 SDK 自带的阻抗检测工具）。
 3.  **启动数据端口**：
     *   打开 Neuradock SDK 。
