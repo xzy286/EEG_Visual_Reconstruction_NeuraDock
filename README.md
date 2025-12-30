@@ -78,7 +78,7 @@
 3.  **启动数据端口**：
     *   打开 Neuradock SDK 。
     *   确认设备在线后，点击 **"打开数据服务"**，开启数据转发服务（TCP协议）。
-    <img width="3440" height="1369" alt="60f8725bb3625d3a1824ff32fc06a994" src="https://github.com/user-attachments/assets/1b044fca-8834-40e4-b8de-cda2d323a3c2" />
+    <img width="3440" height="1369" alt="2624d61b6d4dd4644e36ff48b558917b" src="https://github.com/user-attachments/assets/7b9a02d7-f220-4be7-9337-379cf43684bb" />
 
 设备连接和启动数据端口可以参考 [https://neuradock.com/product-instruction]
 
@@ -124,7 +124,7 @@ python ATMS_reconstruction_neuradock.py --insubject True --subjects sub-001-prep
 ### 1. 定量对比 (Quantitative Evaluation)
 我们将 Neuradock (7通道) 的表现与原论文 (NeurIPS Paper, 128通道全脑/枕叶) 进行了对比。结果显示，在经过 1.5 倍数据量增强后，Neuradock 在 Top-k 检索和 N-way 分类任务上表现出与科研级设备高度一致的趋势。
 
-<img width="3440" height="1369" alt="2624d61b6d4dd4644e36ff48b558917b" src="https://github.com/user-attachments/assets/ef609b13-94df-4b5f-8d94-897436f20813" />
+<img width="1390" height="708" alt="0d881a4873e73eb674a1d572c1977fa2" src="https://github.com/user-attachments/assets/545c2d91-3301-4de6-956b-211cea6c2023" />
 
 
 *注：图中展示了 Neuradock 在 Equal Data (等量数据) 和 1.5x Data (增强数据) 模式下，对比原论文 Occipital (枕叶) 与 Full-Brain (全脑) 的分类准确率。*
