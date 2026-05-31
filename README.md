@@ -159,7 +159,3 @@ If you discover preprocessing parameters better suited to the NeuraDock channel 
 ---
 
 
----
-
-### 贡献建议
-如果你在复现过程中发现了更适合 Neuradock 通道分布的预处理参数，欢迎提交 Pull Request！
